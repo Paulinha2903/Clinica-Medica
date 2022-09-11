@@ -1,0 +1,232 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    color: #0000008c;
+    margin-block-end: 60px;
+}
+
+.container {
+    max-inline-size: 1024px;
+    margin: 0 auto;
+}
+
+.container-conteudo {
+    max-inline-size: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-conteudo h2,
+.container-conteudo h3 {
+    margin: 0;
+}
+
+/* Início CSS Topo */
+.topo {
+    background-color: #00cad1;
+    inline-size: 100%;
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 100%;
+    min-block-size: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.topo-titulo {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-titulo a {
+    display: flex;
+}
+
+.topo-logo {
+    block-size: 60px;
+}
+
+.topo-links {
+    display: flex;
+}
+
+.topo-links a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.topo-links a:hover {
+    color: #004b4c;
+}
+
+@media (max-inline-size: 425px) {
+    .topo .container {
+        flex-direction: column;
+    }
+
+    .topo-titulo {
+        margin: 10px 0;
+    }
+
+    .topo-links {
+        inline-size: 100%;
+        border-block-start: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+}
+
+/* Fim CSS Topo */
+
+
+/* Início CSS Rodapé */
+footer {
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .container {
+    text-align: center;
+}
+
+/* Fim CSS Rodapé */
+
+
+#sobre,
+#especialidades,
+#contato {
+    padding: 40px 20px 0;
+}
+
+.box-visao-geral {
+    position: relative;
+    background-image: url('../Clinica Medica/assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    inline-size: 100%;
+    block-size: 500px;
+}
+
+.box-visao-geral-titulo {
+    block-size: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.box-visao-geral h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 0;
+}
+
+.box-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sobre h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box-sobre img {
+    block-size: 250px;
+}
+
+.box-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-especialidade {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    inline-size: calc(100% / 3 - 40px);
+}
+
+.box-especialidade img {
+    inline-size: 100%;
+}
+
+.box-especialidade figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.box-link-horarios {
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+.link-horarios {
+    background-color: #00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+@media (max-inline-size: 1024px) {
+    .box-visao-geral {
+        block-size: 400px;
+    }
+}
+
+@media (max-inline-size: 768px) {
+    .box-visao-geral {
+        block-size: 300px;
+    }
+
+    .box-sobre img {
+        display: none;
+    }
+
+    .box-especialidades {
+        justify-content: center;
+    }
+
+    .box-especialidade {
+        inline-size: calc(100% / 2 - 40px);
+    }
+}
+
+@media (max-inline-size: 425px) {
+    .box-visao-geral {
+        block-size: 200px;
+    }
+
+    .box-visao-geral h1 {
+        font-size: 28px;
+    }
+
+    .box-especialidade {
+        inline-size: 100%;
+    }
+}

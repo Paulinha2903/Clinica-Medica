@@ -1,0 +1,98 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+}
+
+.sessao-especialidade {
+    margin-block-start: 40px;
+}
+
+.container-titulo {
+    padding: 0 20px;
+}
+
+.conteiner-links-especialidades {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.links-especialidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block-start: 20px;
+    text-align: center;
+}
+
+.links-especialidades a {
+    text-decoration: none;
+    color: #000;
+    border-block-end: 2px solid #00cad1;
+    margin: 0 10px 10px;
+    font-size: 18px;
+}
+
+.links-especialidades a:hover {
+    color: #0d6e71;
+}
+
+.box-tabela-especialista {
+    display: flex;
+    block-size: 240px;
+    padding: 0 20px;
+}
+
+.box-tabela-especialista img {
+    inline-size: 30%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.tabela-especialistas {
+    border-spacing: 0;
+    text-align: start;
+    inline-size: 70%;
+    block-size: 100%;
+}
+
+.tabela-especialistas thead tr {
+    background-color: #00cad1;
+    color: #fff;
+}
+
+.tabela-especialistas tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.tabela-especialistas tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+}
+
+.tabela-especialistas th,
+.tabela-especialistas td {
+    padding: 10px;
+}
+
+@media (max-inline-size: 768px) {
+    .box-tabela-especialista img {
+        display: none;
+    }
+
+    .tabela-especialistas {
+        inline-size: 100%;
+    }
+
+    .box-tabela-especialista {
+        block-size: auto;
+        justify-content: center;
+    }
+}
+
+@media (max-inline-size: 425px) {
+    .box-tabela-especialista {
+        padding: 0;
+    }
+}
